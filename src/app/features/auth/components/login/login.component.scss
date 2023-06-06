@@ -1,0 +1,75 @@
+.container{
+  .description{
+    display: none;
+  }
+  .section{
+    width: 100%;
+    .form{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: auto;
+      gap: 25px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      max-height: 900px;
+      min-width: 284px;
+
+      .logo{
+        font-family: 'Righteous', cursive;
+        font-size: 20px;
+      }
+
+      .welcome-msg{
+        font-family: 'Dosis', sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+      }
+
+      form{
+        display: grid;
+        gap: 15px;
+        width: 100%;
+
+        button{
+          height: 50px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 700px){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1447px;
+    margin: auto;
+
+    .description{
+      display: grid;
+      background: #DDE9F5;
+      grid-auto-rows: auto auto 1fr;
+      margin: 10px 10px 10px 0;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 30px;
+      h2, h3{
+        text-align: end;
+        margin: 0;
+        max-width: 335px;
+        align-self: flex-end;
+        justify-self: flex-end;
+      }
+
+      h3{
+        font-weight: 100;
+      }
+
+      img{
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

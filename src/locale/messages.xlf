@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-CM" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="8779409404369709444" datatype="html">
+        <source>i18n works!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/test/components/i18n/i18n.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3314538230510136383" datatype="html">
+        <source>https://images.unsplash.com/photo-1542274368-443d694d79aa?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=465&amp;q=80</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/test/components/i18n/i18n.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6563391987554512024" datatype="html">
+        <source>Test</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/test/components/i18n/i18n.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

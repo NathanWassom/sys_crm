@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="section">
+    <div class="form">
+      <div class="logo">
+        logo
+      </div>
+      <div class="welcome-msg">
+        Welcome Back !
+      </div>
+      <form [formGroup]="loginForm">
+        <mat-form-field appearance="outline">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Username..." [formControl]="userNameCtrl">
+          <mat-icon svgIcon="login" matPrefix [color]="userNameCtrl.status === 'INVALID' ? 'warn': 'primary'"></mat-icon>
+          <mat-hint>Username does not contain spaces!</mat-hint>
+          <mat-error>This field is required !</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password..." [type]="hide ? 'password' : 'text'" [formControl]="passwordCtrl">
+          <mat-icon matPrefix svgIcon="pwd" [color]="passwordCtrl.status === 'INVALID' ? 'warn': 'primary'"></mat-icon>
+
+          <mat-hint>more than 8 characters</mat-hint>
+          <mat-error>{{getFormControlErrorText(passwordCtrl)}}</mat-error>
+        </mat-form-field>
+        <button mat-flat-button color="primary" (click)="submitLogin()">
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="description">
+    <h2>Your customer relation management</h2>
+    <h3>subscribe to access our features by contacting us!</h3>
+    <img src="assets/medias/icons/svg/dashboard.svg" alt="Dashboard image">
+  </div>
+</div>
+

@@ -1,0 +1,20 @@
+<div>
+  <a routerLink="i18n">I18N</a>
+  <button mat-stroked-button color="primary" data-cy="decrement" (click)="decrement()">-</button>
+  <span data-cy="counter">{{ count }}</span>
+  <button mat-stroked-button color="accent" data-cy="increment" (click)="increment()">+</button>
+</div>
+
+<div class="container">
+  <ng-container *ngFor="let candidate of candidates$ | async">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{candidate.firstName}} {{candidate.lastName}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur consequuntur delectus deleniti dignissimos dolore ea error facilis fugiat fugit illum labore, maiores maxime obcaecati qui reiciendis repellat, saepe tenetur.
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+</div>
+
